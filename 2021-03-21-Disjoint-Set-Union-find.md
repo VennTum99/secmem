@@ -142,3 +142,45 @@ Rank Compression을 사용하지 않을 경우, 랜덤한 데이터에서는 Pat
 
 하지만 만약에 합쳐진 경로가 중요하여 주어진 트리 구조를 망가뜨리는 것이 불가능한 경우, Path Compression을 사용하는 것이 불가능하므로, 이 경우에는 Rank Compression을 이용하여 O(log N)의 시간복잡도를 보장받을 수 있습니다.
 
+# 코드
+
+## Disjoint Set - Union & find
+
+``` C
+int parent[n + 1] = {0, 1, ..., n};
+
+int find(int a){
+ if(a == parent[a]) return a;
+ return find(parent[a]);
+}
+void union(int a, int b){
+ a = find(a);
+ b = find(b);
+ parent[b] = a;
+}
+```
+
+## path compression
+
+``` C
+int find(int a){
+ if(a == parent[a]) return a;
+ return parent[a] = find(parent[a]);
+}
+```
+
+## rank compression(by using size)
+
+``` C
+int rank[n + 1] = {1, 1, ..., 1};
+
+void union(int a, int b){
+ a = find(a);
+ b = find(b);
+ if(rank[a] < rank[b]) swap(a, b);
+ rank[a] += rank[b];
+ parent[b] = a;
+}
+```
+
+현재 c++ 버전에 따라 rank를 변수명으로 사용할 수 없을 수도 있으니, 이를 고려하여 변수명을 바꾸어 사용하시면 됩니다.
