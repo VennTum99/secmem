@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Disjoint Set & Union-find"
-date:   2021-03-21 00:00:00
+date:   2021-03-21 08:00:00
 author: VennTum
 tags: [data-structure, algorithm]
 ---
