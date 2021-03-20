@@ -1,5 +1,13 @@
-Floyd-Warshall
+---
+---
+layout: post
+title:  "Shortest Path Algorithm - Floyd-Warshall"
+date:   2021-03-20 15:00:00
+author: VennTum
+tags: [algorithm]
+---
 
+---
 
 
 플로이드 워셜 알고리즘(흔히 플로이드라고 부른다)은 그래프에서 모든 정점 사이의 최단경로 및 최단거리를 구하는 알고리즘이다. Bellman-Ford, Dijkstra와는 다르게 한 정점으로부터 나머지 모든 정점으로의 최단경로가 아닌 모든 정점 사이의 최단경로를 구할 수 있으며, 음수 사이클이 없는 그래프라면 음수 가중치가 있어도 동작한다.
