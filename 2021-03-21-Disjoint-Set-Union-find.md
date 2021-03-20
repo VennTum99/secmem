@@ -20,8 +20,6 @@ Disjoint set data structure를 사용하면 서로 다른 원소들이 같은 �
 
 Disjoint Set은 트리를 이용하여 표현하게 됩니다. 같은 집합에 속한 원소들 중 하나를 루트로 하고, 나머지 원소들을 각각 루트 원소의 자식이 되도록 표현하는 것을 기본으로 합니다.
 
-
-![dsu1](https://github.com/VennTum99/secmem/blob/main/images/Disjoint-Set-Union-find/dsu1.png)
 <center><img src="https://github.com/VennTum99/secmem/blob/main/images/Disjoint-Set-Union-find/dsu1.png"></center>
 
 트리를 구성하는 과정에서는 자식 노드만 부모노드를 알고 있으면 된다. 같은 집합인지 확인하는 과정을 그 원소가 속해있는 트리의 루트원소가 무엇인가를 통하여 판별하기 때문이다. (같은 트리에 속한 원소들의 루트는 다 같으며, 원소의 루트가 다를 경우 다른 트리임이 분명하다.)
