@@ -66,7 +66,7 @@ N개의 원소들이 각각 서로 다른 집합에 속해있습니다. 이 때,
 이러한 문제를 해결하기 위해 다음과 같은 2가지 방법이 등장하게 됩니다.
  
 
-1. 경로 압축 (Path Compression)
+## 1. 경로 압축 (Path Compression)
 
 
 
@@ -83,7 +83,7 @@ N개의 원소를 union하는 과정과, N 이상의 find를 하는 과정에서
 
 
 
-2. 랭크 압축 (Rank Compression)
+## 2. 랭크 압축 (Rank Compression)
 
 
 
@@ -132,7 +132,7 @@ Rank Compression은 합하는 과정을 향상시키므로 이후 한 원소에�
 
 
 
-3. Path Compression + Rank Compression
+## 3. Path Compression + Rank Compression
 
 
 
